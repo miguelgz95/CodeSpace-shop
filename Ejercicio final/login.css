@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f5f7;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Inter", system-ui, "Roboto", Helvetica, Arial;
+}
+
+.card {
+    background-color: white;
+    width: 580px;
+    height: 50vh;
+    border-radius: 6px;
+    box-shadow: 5px 15px 15px rgb(230, 230, 230);
+    margin-bottom: 180px;
+
+    display: flex;
+}
+
+.image-desktop {
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, -2)), 
+    url(Imagenes/image-login.jpeg);
+    
+    background-position: 89%;
+    background-size: cover;
+    transform: scaleX(-1);   
+}
+.image-mobile {
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, -2)), 
+    url(Imagenes/image-login-mobile.jpeg);
+    
+    background-position: -50% 0;
+    background-size: cover;
+}
+
+.login {
+    padding-left: 25px;
+    width: 95%;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    height: 60%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-right: 5px;
+    margin-right: 80px;
+}
+
+hr {
+    margin-right: 85px;
+    color: rgb(235, 235, 235);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+  
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-right: 5px;
+    margin-right: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #6c2bd9;
+    font-size: 0.8em;
+    margin-top: 0px;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: #411b83;
+}
+
+[class^="input"] {
+    height: 30px;
+    border-radius: 7px;
+    border: 2px #a7a7a852 solid;
+    background-color: white;
+}
+
+.input-purple {
+    background-color: #6c2bd9;
+  
+    color: white;
+    border:  #6c2bd9;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.input-purple:hover {
+    background-color: #380a88;
+    cursor: pointer;
+    transition: 0.1s;
+    color: white;
+    text-decoration: none;
+}
+
+.input-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-github:hover {
+    background-color: rgb(240, 240, 240);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.input-twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-twitter:hover {
+    background-color: rgb(240, 240, 240);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 578.98px) {
+    .body {
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .card {
+        margin-top: 10%;
+        width: 450px;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .image-mobile {
+        height: 250px;
+    }
+
+    .desktop {
+        display:none;
+    }
+
+    .login {
+        width: 470px;
+        height: 100vh;
+        padding-left: 50px;
+    }
+
+}
