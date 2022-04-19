@@ -1,7 +1,7 @@
 # CodeSpace-shop
-Práctica final hecha únicamente con HTML y CSS 
+Final practice made entirely with HTML and CSS 
 
-Capturas de imagen:
+- Some screenshots:
 
 <img width="499" alt="Captura de pantalla 2022-01-26 a las 22 23 55" src="https://user-images.githubusercontent.com/90695378/151249603-544e846c-82ea-415c-a9f6-9ec259c3218c.png">
 
